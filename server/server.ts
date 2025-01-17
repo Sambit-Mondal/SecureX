@@ -4,6 +4,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import connectDB from './database/db';
+import authRoutes from './routes/authRoutes';
 
 // Dotenv configuration
 dotenv.config();
@@ -21,6 +22,9 @@ app.use(cors({
     credentials: true
 }));
 app.use(bodyParser.json());
+
+// Routes
+app.use('/api/auth', authRoutes);
 
 // Port definition
 const PORT = process.env.PORT || 3000;

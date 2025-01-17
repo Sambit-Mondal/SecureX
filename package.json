@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "name": "securex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run start --prefix server\" \"npm run dev --prefix client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sambit-Mondal/SecureX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sambit-Mondal/SecureX/issues"
+  },
+  "homepage": "https://github.com/Sambit-Mondal/SecureX#readme"
+}
